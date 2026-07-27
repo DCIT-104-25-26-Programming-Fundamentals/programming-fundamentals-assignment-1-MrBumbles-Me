@@ -1,16 +1,18 @@
-def is_prime(n):
-    """Return True if n is a prime number, False otherwise."""
-    if n < 2:
+def is_prime(number):
+    if number < 2:
         return False
-    for divisor in range(2, int(n ** 0.5) + 1):
-        if n % divisor == 0:
+
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
             return False
+
     return True
 
 
-if __name__ == "__main__":
-    num = int(input("Enter a number: "))
-    if is_prime(num):
-        print(f"{num} is a prime number.")
-    else:
-        print(f"{num} is NOT a prime number.")
+# Main program block
+num = int(input("Enter a number: "))
+
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is NOT a prime number.")
