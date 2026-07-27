@@ -1,5 +1,5 @@
 def calculate_sum(numbers):
-    """Return the sum of a list of numbers, without using sum()."""
+    #Return the sum of a list of numbers, without using sum().
     total = 0
     for num in numbers:
         total += num
@@ -7,12 +7,12 @@ def calculate_sum(numbers):
 
 
 def calculate_average(numbers):
-    """Return the average of a list of numbers."""
+    #Return the average of a list of numbers.
     return calculate_sum(numbers) / len(numbers)
 
 
 def calculate_max(numbers):
-    """Return the largest value in a list, without using max()."""
+    #Return the largest value in a list, without using max().
     largest = numbers[0]
     for num in numbers:
         if num > largest:
@@ -21,7 +21,7 @@ def calculate_max(numbers):
 
 
 def calculate_min(numbers):
-    """Return the smallest value in a list, without using min()."""
+    #Return the smallest value in a list, without using min().
     smallest = numbers[0]
     for num in numbers:
         if num < smallest:

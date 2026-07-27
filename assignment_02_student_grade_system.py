@@ -1,5 +1,5 @@
 def get_grade(score):
-    """Return the letter grade for a score, or None if score is out of range."""
+    #Return the letter grade for a score, or None if score is out of range.
     if score < 0 or score > 100:
         return None
     elif score >= 80:
